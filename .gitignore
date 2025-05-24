@@ -1,0 +1,27 @@
+# Unity
+[Libraries]
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+MemoryCaptures/
+
+[User-specific]
+UserSettings/
+*.csproj
+*.sln
+*.user
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.apk
+*.unitypackage
+.DS_Store
+
+[IDE]
+.vscode/
+.idea/
+*.code-workspace

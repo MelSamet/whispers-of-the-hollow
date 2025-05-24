@@ -1,0 +1,1307 @@
+{
+  "nodes": [
+    {
+      "id": "start",
+      "region": "Forgotten Woods",
+      "text": "You wake up in the heart of a mysterious forest, your memory blurred. The tall trees sway as whispers of a forgotten past echo through the leaves.",
+      "background": "forest_bg",
+      "music": "forest_theme",
+      "choices": [
+        {
+          "text": "Follow a faint trail through the undergrowth",
+          "nextId": "path_split",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Wisdom",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Inspect the eerie carvings on the trees",
+          "nextId": "path_split",
+          "requiredStat": "Perception",
+          "requiredStatValue": 6,
+          "gainStat": "Perception",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true,
+          "failureNextId": "fail_start"
+        },
+        {
+          "text": "Sit quietly to decipher the forest's whispers",
+          "nextId": "path_split",
+          "requiredStat": "Wisdom",
+          "requiredStatValue": 6,
+          "gainStat": "Wisdom",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true,
+          "failureNextId": "fail_start"
+        }
+      ]
+    },
+    {
+      "id": "path_split",
+      "region": "Crossroads",
+      "text": "You reach a fork in the road. To the left, a foggy trail disappears into shadow; to the right, you hear running water.",
+      "background": "crossroads_bg",
+      "music": "tense_theme",
+      "choices": [
+        {
+          "text": "Venture toward the sound of flowing water",
+          "nextId": "waterfall",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Perception",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Scout the foggy trail for hidden signs",
+          "nextId": "waterfall",
+          "requiredStat": "Perception",
+          "requiredStatValue": 7,
+          "gainStat": "Perception",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true,
+          "failureNextId": "fail_path_split"
+        },
+        {
+          "text": "Pause to assess the diverging paths",
+          "nextId": "waterfall",
+          "requiredStat": "Wisdom",
+          "requiredStatValue": 6,
+          "gainStat": "Wisdom",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true,
+          "failureNextId": "fail_path_split"
+        }
+      ]
+    },
+    {
+      "id": "waterfall",
+      "region": "Silver Falls",
+      "text": "The sound of crashing water grows louder until you see a magnificent waterfall cascading into a crystal pool.",
+      "background": "waterfall_bg",
+      "music": "calm_theme",
+      "choices": [
+        {
+          "text": "Cross the rocks to the cave beyond",
+          "nextId": "dark_cave",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Perception",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Search the pool for submerged treasures",
+          "nextId": "dark_cave",
+          "requiredStat": "Perception",
+          "requiredStatValue": 5,
+          "gainStat": "Perception",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true,
+          "failureNextId": "fail_waterfall"
+        },
+        {
+          "text": "Rest by the soothing waterfall",
+          "nextId": "dark_cave",
+          "requiredStat": "Wisdom",
+          "requiredStatValue": 6,
+          "gainStat": "Wisdom",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true,
+          "failureNextId": "fail_waterfall"
+        }
+      ]
+    },
+    {
+      "id": "dark_cave",
+      "region": "Shadow Cave",
+      "text": "A cold draft pulls you into a pitch-black cave. Faint glowing symbols mark the walls.",
+      "background": "cave_bg",
+      "music": "mystery_theme",
+      "choices": [
+        {
+          "text": "Navigate deeper into the darkness",
+          "nextId": "battle_1",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Wisdom",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false,
+          "victoryNextId": "after_victory",
+          "defeatNextId": "after_defeat",
+          "returnAfterBattleId": "campfire",
+          "enemySprite": "enemy_shadow_beast"
+        },
+        {
+          "text": "Examine the glowing symbols closely",
+          "nextId": "campfire",
+          "requiredStat": "Perception",
+          "requiredStatValue": 5,
+          "gainStat": "Perception",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true,
+          "failureNextId": "fail_dark_cave"
+        },
+        {
+          "text": "Meditate to sense the cave's energy",
+          "nextId": "campfire",
+          "requiredStat": "Wisdom",
+          "requiredStatValue": 5,
+          "gainStat": "Wisdom",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true,
+          "failureNextId": "fail_dark_cave"
+        }
+      ]
+    },
+    {
+      "id": "campfire",
+      "region": "Abandoned Camp",
+      "text": "You discover remnants of a campfire. Someone was here recently. The ashes are still warm.",
+      "background": "camp_bg",
+      "music": "suspense_theme",
+      "choices": [
+        {
+          "text": "Press onward through the camp",
+          "nextId": "merchant",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Perception",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Search the ashes for clues",
+          "nextId": "merchant",
+          "requiredStat": "Perception",
+          "requiredStatValue": 7,
+          "gainStat": "Perception",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true,
+          "failureNextId": "fail_campfire"
+        },
+        {
+          "text": "Reflect on who might have been here",
+          "nextId": "merchant",
+          "requiredStat": "Wisdom",
+          "requiredStatValue": 5,
+          "gainStat": "Wisdom",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true,
+          "failureNextId": "fail_campfire"
+        }
+      ]
+    },
+    {
+      "id": "merchant",
+      "region": "Nomad's Market",
+      "text": "A cloaked merchant waves you over. 'Rare goods for brave souls,' he says with a grin.",
+      "background": "market_bg",
+      "music": "village_theme",
+      "choices": [
+        {
+          "text": "Leave the market and continue your journey",
+          "nextId": "ruins",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Wisdom",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Inspect the merchant\u2019s wares closely",
+          "nextId": "ruins",
+          "requiredStat": "Perception",
+          "requiredStatValue": 6,
+          "gainStat": "Perception",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        },
+        {
+          "text": "Engage the merchant in conversation",
+          "nextId": "ruins",
+          "requiredStat": "Wisdom",
+          "requiredStatValue": 8,
+          "gainStat": "Wisdom",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        }
+      ]
+    },
+    {
+      "id": "ruins",
+      "region": "Ancient Ruins",
+      "text": "You stumble upon moss-covered stone ruins. Carvings suggest an ancient civilization once thrived here.",
+      "background": "ruins_bg",
+      "music": "ancient_theme",
+      "choices": [
+        {
+          "text": "Explore the ruins further",
+          "nextId": "spirit",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Perception",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Decipher the ancient carvings",
+          "nextId": "spirit",
+          "requiredStat": "Perception",
+          "requiredStatValue": 8,
+          "gainStat": "Perception",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        },
+        {
+          "text": "Meditate amidst the ruins",
+          "nextId": "spirit",
+          "requiredStat": "Wisdom",
+          "requiredStatValue": 5,
+          "gainStat": "Wisdom",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        }
+      ]
+    },
+    {
+      "id": "spirit",
+      "region": "Spirit Grove",
+      "text": "A glowing fox-like spirit appears. It circles you, then runs into the forest. You feel compelled to follow.",
+      "background": "grove_bg",
+      "music": "ethereal_theme",
+      "choices": [
+        {
+          "text": "Chase the spirit deeper into the grove",
+          "nextId": "bridge",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Perception",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Observe the spirit\u2019s movements carefully",
+          "nextId": "bridge",
+          "requiredStat": "Perception",
+          "requiredStatValue": 8,
+          "gainStat": "Perception",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        },
+        {
+          "text": "Commune with the grove\u2019s mystic energy",
+          "nextId": "bridge",
+          "requiredStat": "Wisdom",
+          "requiredStatValue": 6,
+          "gainStat": "Wisdom",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        }
+      ]
+    },
+    {
+      "id": "bridge",
+      "region": "Old Bridge",
+      "text": "An old rope bridge sways above a deep ravine. A sign reads: 'Cross only if you have no fear.'",
+      "background": "bridge_bg",
+      "music": "tense_theme",
+      "choices": [
+        {
+          "text": "Carefully cross the swaying bridge",
+          "nextId": "battle_1",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Wisdom",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false,
+          "enemySprite": "enemy_shadow_beast"
+        },
+        {
+          "text": "Inspect the bridge for stability",
+          "nextId": "library",
+          "requiredStat": "Perception",
+          "requiredStatValue": 6,
+          "gainStat": "Perception",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        },
+        {
+          "text": "Steel yourself for the crossing",
+          "nextId": "library",
+          "requiredStat": "Wisdom",
+          "requiredStatValue": 6,
+          "gainStat": "Wisdom",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        }
+      ]
+    },
+    {
+      "id": "library",
+      "region": "Forgotten Library",
+      "text": "Dusty tomes and relics line the walls. You feel knowledge radiating from every corner.",
+      "background": "library_bg",
+      "music": "mystery_theme",
+      "choices": [
+        {
+          "text": "Proceed through the library\u2019s halls",
+          "nextId": "oracle",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Wisdom",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Examine the ancient manuscripts",
+          "nextId": "oracle",
+          "requiredStat": "Perception",
+          "requiredStatValue": 9,
+          "gainStat": "Perception",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        },
+        {
+          "text": "Absorb the library\u2019s silent wisdom",
+          "nextId": "oracle",
+          "requiredStat": "Wisdom",
+          "requiredStatValue": 7,
+          "gainStat": "Wisdom",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        }
+      ]
+    },
+    {
+      "id": "oracle",
+      "region": "Crystal Hall",
+      "text": "You enter a crystalline dome. In the center floats an ethereal oracle who speaks in riddles.",
+      "background": "oracle_bg",
+      "music": "magic_theme",
+      "choices": [
+        {
+          "text": "Advance toward the oracle\u2019s light",
+          "nextId": "mirror_room",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Wisdom",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Study the crystalline patterns",
+          "nextId": "mirror_room",
+          "requiredStat": "Perception",
+          "requiredStatValue": 8,
+          "gainStat": "Perception",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        },
+        {
+          "text": "Ponder the oracle\u2019s riddles",
+          "nextId": "mirror_room",
+          "requiredStat": "Wisdom",
+          "requiredStatValue": 6,
+          "gainStat": "Wisdom",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        }
+      ]
+    },
+    {
+      "id": "mirror_room",
+      "region": "Hall of Reflections",
+      "text": "Mirrors line the walls, showing not your reflection but different paths you've taken.",
+      "background": "mirror_bg",
+      "music": "psychic_theme",
+      "choices": [
+        {
+          "text": "Step through the mirrored hall",
+          "nextId": "village",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Wisdom",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Examine the shifting reflections",
+          "nextId": "village",
+          "requiredStat": "Perception",
+          "requiredStatValue": 5,
+          "gainStat": "Perception",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        },
+        {
+          "text": "Reflect on your past choices",
+          "nextId": "village",
+          "requiredStat": "Wisdom",
+          "requiredStatValue": 7,
+          "gainStat": "Wisdom",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        }
+      ]
+    },
+    {
+      "id": "village",
+      "region": "Quiet Village",
+      "text": "Children play and elders sit by fires. Peaceful... but something feels off.",
+      "background": "village_bg",
+      "music": "calm_theme",
+      "choices": [
+        {
+          "text": "Leave the village behind",
+          "nextId": "storm",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Wisdom",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Investigate the villagers\u2019 behavior",
+          "nextId": "storm",
+          "requiredStat": "Perception",
+          "requiredStatValue": 6,
+          "gainStat": "Perception",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        },
+        {
+          "text": "Speak with the village elders",
+          "nextId": "storm",
+          "requiredStat": "Wisdom",
+          "requiredStatValue": 5,
+          "gainStat": "Wisdom",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        }
+      ]
+    },
+    {
+      "id": "storm",
+      "region": "Thunder Peaks",
+      "text": "Dark clouds loom. Lightning strikes a nearby tree, igniting it. A path leads into the storm.",
+      "background": "storm_bg",
+      "music": "storm_theme",
+      "choices": [
+        {
+          "text": "Brave the stormy path ahead",
+          "nextId": "altar",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Wisdom",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Search for shelter from the storm",
+          "nextId": "altar",
+          "requiredStat": "Perception",
+          "requiredStatValue": 6,
+          "gainStat": "Perception",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        },
+        {
+          "text": "Prepare mentally for the tempest",
+          "nextId": "altar",
+          "requiredStat": "Wisdom",
+          "requiredStatValue": 9,
+          "gainStat": "Wisdom",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        }
+      ]
+    },
+    {
+      "id": "altar",
+      "region": "Ancient Altar",
+      "text": "Atop a hill, an altar pulses with energy. Three relics rest on it.",
+      "background": "altar_bg",
+      "music": "ritual_theme",
+      "choices": [
+        {
+          "text": "Approach the glowing altar",
+          "nextId": "battle_2",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Wisdom",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false,
+          "enemySprite": "enemy_ancient_guardian"
+        },
+        {
+          "text": "Examine the relics carefully",
+          "nextId": "gate",
+          "requiredStat": "Perception",
+          "requiredStatValue": 6,
+          "gainStat": "Perception",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        },
+        {
+          "text": "Meditate on the altar\u2019s power",
+          "nextId": "gate",
+          "requiredStat": "Wisdom",
+          "requiredStatValue": 5,
+          "gainStat": "Wisdom",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        }
+      ]
+    },
+    {
+      "id": "gate",
+      "region": "Sealed Gate",
+      "text": "A massive gate blocks your path. Symbols glow faintly as you approach.",
+      "background": "gate_bg",
+      "music": "mystery_theme",
+      "choices": [
+        {
+          "text": "Attempt to open the gate",
+          "nextId": "enemy",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Wisdom",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Study the glowing symbols",
+          "nextId": "enemy",
+          "requiredStat": "Perception",
+          "requiredStatValue": 9,
+          "gainStat": "Perception",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        },
+        {
+          "text": "Focus to sense the gate\u2019s energy",
+          "nextId": "enemy",
+          "requiredStat": "Wisdom",
+          "requiredStatValue": 5,
+          "gainStat": "Wisdom",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        }
+      ]
+    },
+    {
+      "id": "enemy",
+      "region": "Bandit Ambush",
+      "text": "From the shadows, a group of bandits attack! You must fight or flee.",
+      "background": "ambush_bg",
+      "music": "battle_theme",
+      "choices": [
+        {
+          "text": "Prepare to confront the bandits",
+          "nextId": "battle_3",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Wisdom",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false,
+          "enemySprite": "enemy_bandit"
+        },
+        {
+          "text": "Scan for an escape route",
+          "nextId": "fortress",
+          "requiredStat": "Perception",
+          "requiredStatValue": 7,
+          "gainStat": "Perception",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        },
+        {
+          "text": "Devise a strategy to outwit them",
+          "nextId": "fortress",
+          "requiredStat": "Wisdom",
+          "requiredStatValue": 5,
+          "gainStat": "Wisdom",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        }
+      ]
+    },
+    {
+      "id": "fortress",
+      "region": "Ruined Fortress",
+      "text": "You find shelter in a half-collapsed stone fortress. Something stirs within the rubble.",
+      "background": "fortress_bg",
+      "music": "ruin_theme",
+      "choices": [
+        {
+          "text": "Move through the fortress cautiously",
+          "nextId": "sanctuary",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Perception",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Search the rubble for hidden items",
+          "nextId": "sanctuary",
+          "requiredStat": "Perception",
+          "requiredStatValue": 6,
+          "gainStat": "Perception",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        },
+        {
+          "text": "Rest to regain your strength",
+          "nextId": "sanctuary",
+          "requiredStat": "Wisdom",
+          "requiredStatValue": 9,
+          "gainStat": "Wisdom",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        }
+      ]
+    },
+    {
+      "id": "sanctuary",
+      "region": "Hidden Sanctuary",
+      "text": "A glowing spring surrounded by white flowers soothes your wounds and mind.",
+      "background": "sanctuary_bg",
+      "music": "healing_theme",
+      "choices": [
+        {
+          "text": "Leave the sanctuary to continue",
+          "nextId": "end",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Wisdom",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Examine the glowing spring",
+          "nextId": "end",
+          "requiredStat": "Perception",
+          "requiredStatValue": 5,
+          "gainStat": "Perception",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        },
+        {
+          "text": "Meditate by the tranquil spring",
+          "nextId": "end",
+          "requiredStat": "Wisdom",
+          "requiredStatValue": 6,
+          "gainStat": "Wisdom",
+          "gainAmount": 2,
+          "lossAmount": 1,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        }
+      ]
+    },
+    {
+      "id": "end",
+      "region": "Edge of the World",
+      "text": "You reach a cliff that overlooks endless clouds. A final choice awaits.",
+      "background": "cliff_bg",
+      "music": "final_theme",
+      "choices": [
+        {
+          "text": "Embrace the journey\u2019s end",
+          "nextId": "start",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Wisdom",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        }
+      ]
+    },
+    {
+      "id": "fail_start",
+      "region": "Misdirection",
+      "text": "You failed your attempt at the previous action and something went wrong. You find yourself disoriented and must choose how to proceed.",
+      "background": "fallback_bg",
+      "music": "fail_theme",
+      "choices": [
+        {
+          "text": "Regain focus and move on.",
+          "nextId": "campfire",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Wisdom",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Inspect your wounds.",
+          "nextId": "campfire",
+          "requiredStat": "Perception",
+          "requiredStatValue": 5,
+          "gainStat": "Perception",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 3,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        },
+        {
+          "text": "Lie down and rest.",
+          "nextId": "campfire",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "None",
+          "gainAmount": 0,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 2,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        }
+      ]
+    },
+    {
+      "id": "fail_path_split",
+      "region": "Misdirection",
+      "text": "You failed your attempt at the previous action and something went wrong. You find yourself disoriented and must choose how to proceed.",
+      "background": "fallback_bg",
+      "music": "fail_theme",
+      "choices": [
+        {
+          "text": "Regain focus and move on.",
+          "nextId": "campfire",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Wisdom",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Inspect your wounds.",
+          "nextId": "campfire",
+          "requiredStat": "Perception",
+          "requiredStatValue": 5,
+          "gainStat": "Perception",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 3,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        },
+        {
+          "text": "Lie down and rest.",
+          "nextId": "campfire",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "None",
+          "gainAmount": 0,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 2,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        }
+      ]
+    },
+    {
+      "id": "fail_waterfall",
+      "region": "Misdirection",
+      "text": "You failed your attempt at the previous action and something went wrong. You find yourself disoriented and must choose how to proceed.",
+      "background": "fallback_bg",
+      "music": "fail_theme",
+      "choices": [
+        {
+          "text": "Regain focus and move on.",
+          "nextId": "campfire",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Wisdom",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Inspect your wounds.",
+          "nextId": "campfire",
+          "requiredStat": "Perception",
+          "requiredStatValue": 5,
+          "gainStat": "Perception",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 3,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        },
+        {
+          "text": "Lie down and rest.",
+          "nextId": "campfire",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "None",
+          "gainAmount": 0,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 2,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        }
+      ]
+    },
+    {
+      "id": "fail_dark_cave",
+      "region": "Misdirection",
+      "text": "You failed your attempt at the previous action and something went wrong. You find yourself disoriented and must choose how to proceed.",
+      "background": "fallback_bg",
+      "music": "fail_theme",
+      "choices": [
+        {
+          "text": "Regain focus and move on.",
+          "nextId": "campfire",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Wisdom",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Inspect your wounds.",
+          "nextId": "campfire",
+          "requiredStat": "Perception",
+          "requiredStatValue": 5,
+          "gainStat": "Perception",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 3,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        },
+        {
+          "text": "Lie down and rest.",
+          "nextId": "campfire",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "None",
+          "gainAmount": 0,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 2,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        }
+      ]
+    },
+    {
+      "id": "fail_campfire",
+      "region": "Misdirection",
+      "text": "You failed your attempt at the previous action and something went wrong. You find yourself disoriented and must choose how to proceed.",
+      "background": "fallback_bg",
+      "music": "fail_theme",
+      "choices": [
+        {
+          "text": "Regain focus and move on.",
+          "nextId": "campfire",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Wisdom",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 5,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Inspect your wounds.",
+          "nextId": "campfire",
+          "requiredStat": "Perception",
+          "requiredStatValue": 5,
+          "gainStat": "Perception",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 3,
+          "hpChangeOnFail": -3,
+          "useProbability": true
+        },
+        {
+          "text": "Lie down and rest.",
+          "nextId": "campfire",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "None",
+          "gainAmount": 0,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 2,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        }
+      ]
+    },
+    {
+      "id": "after_victory",
+      "region": "Hall of Triumph",
+      "text": "The battle is over. You emerge victorious, and whispers of your strength spread across the realm. But the path forward still lies shrouded in mystery...",
+      "background": "hall_bg",
+      "music": "triumph_theme",
+      "choices": [
+        {
+          "text": "Continue your journey into the unknown.",
+          "nextId": "campfire",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "Wisdom",
+          "gainAmount": 1,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        }
+      ]
+    },
+    {
+      "id": "after_defeat",
+      "region": "Sanctuary of Loss",
+      "text": "You were defeated, yet not destroyed. A strange force heals your wounds and sets you back on your feet. You know now that failing is just another step forward.",
+      "background": "sanctuary_bg",
+      "music": "defeat_theme",
+      "choices": [
+        {
+          "text": "Gather yourself and return to the path.",
+          "nextId": "campfire",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "None",
+          "gainAmount": 0,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 10,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        }
+      ]
+    },
+    {
+      "id": "ending_1",
+      "region": "Crystal Summit",
+      "text": "You have reached the end of your journey. Peace now reigns over the land thanks to your deeds.",
+      "background": "summit_bg",
+      "music": "end_theme",
+      "choices": [
+        {
+          "text": "Return to main menu",
+          "nextId": "main_menu",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "None",
+          "gainAmount": 0,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "View your journey summary",
+          "nextId": "main_menu",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "None",
+          "gainAmount": 0,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Contemplate your legacy",
+          "nextId": "main_menu",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "None",
+          "gainAmount": 0,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        }
+      ]
+    },
+    {
+      "id": "ending_2",
+      "region": "Broken Horizon",
+      "text": "Though your path was harsh, you've carved a place for yourself in the legends of this world.",
+      "background": "desert_end_bg",
+      "music": "end_theme_dark",
+      "choices": [
+        {
+          "text": "Accept your fate and rest",
+          "nextId": "main_menu",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "None",
+          "gainAmount": 0,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Replay your favorite moment",
+          "nextId": "main_menu",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "None",
+          "gainAmount": 0,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Start a new legend",
+          "nextId": "main_menu",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "None",
+          "gainAmount": 0,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        }
+      ]
+    },
+    {
+      "id": "ending_3",
+      "region": "Circle of Memory",
+      "text": "Time flows on, but your story will be remembered. The end, perhaps, is just another beginning.",
+      "background": "memory_bg",
+      "music": "peaceful_credits",
+      "choices": [
+        {
+          "text": "Fade into the main menu",
+          "nextId": "main_menu",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "None",
+          "gainAmount": 0,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Whisper one last tale",
+          "nextId": "main_menu",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "None",
+          "gainAmount": 0,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        },
+        {
+          "text": "Return in another form",
+          "nextId": "main_menu",
+          "requiredStat": "None",
+          "requiredStatValue": 0,
+          "gainStat": "None",
+          "gainAmount": 0,
+          "lossAmount": 0,
+          "hpChangeOnSuccess": 0,
+          "hpChangeOnFail": 0,
+          "useProbability": false
+        }
+      ]
+    },
+    {
+      "id": "main_menu",
+      "region": "Main Menu",
+      "text": "You return to the main menu. Choose your next path or exit the tale.",
+      "background": "menu_bg",
+      "music": "menu_theme",
+      "choices": []
+    }
+  ]
+}

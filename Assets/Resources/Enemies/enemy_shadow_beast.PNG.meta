@@ -1,0 +1,1222 @@
+fileFormatVersion: 2
+guid: 708c162e91307ee43b24b1f87a4451aa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2090419220659684291
+    second: enemy_shadow_beast_0
+  - first:
+      213: -4104566482859583493
+    second: enemy_shadow_beast_1
+  - first:
+      213: -1599221324570549792
+    second: enemy_shadow_beast_2
+  - first:
+      213: 1515512810979431513
+    second: enemy_shadow_beast_3
+  - first:
+      213: 488061641221008948
+    second: enemy_shadow_beast_4
+  - first:
+      213: -4239840467487446307
+    second: enemy_shadow_beast_5
+  - first:
+      213: 2265317585246865228
+    second: enemy_shadow_beast_6
+  - first:
+      213: 3500756357680332028
+    second: enemy_shadow_beast_7
+  - first:
+      213: -1644137606015298477
+    second: enemy_shadow_beast_8
+  - first:
+      213: 714832368502738383
+    second: enemy_shadow_beast_9
+  - first:
+      213: -8108610554941920707
+    second: enemy_shadow_beast_10
+  - first:
+      213: -8924864878004470509
+    second: enemy_shadow_beast_11
+  - first:
+      213: 3743315708220422078
+    second: enemy_shadow_beast_12
+  - first:
+      213: -1253357411284796077
+    second: enemy_shadow_beast_13
+  - first:
+      213: 7520106762832398940
+    second: enemy_shadow_beast_14
+  - first:
+      213: -3249354348681629555
+    second: enemy_shadow_beast_15
+  - first:
+      213: 7881474527064587536
+    second: enemy_shadow_beast_16
+  - first:
+      213: 5551155752069758412
+    second: enemy_shadow_beast_17
+  - first:
+      213: 4491740455868186670
+    second: enemy_shadow_beast_18
+  - first:
+      213: -7079702622923276607
+    second: enemy_shadow_beast_19
+  - first:
+      213: 9102220438911967264
+    second: enemy_shadow_beast_20
+  - first:
+      213: 8582300309741045746
+    second: enemy_shadow_beast_21
+  - first:
+      213: -2841582500107660109
+    second: enemy_shadow_beast_22
+  - first:
+      213: -6950244126156047953
+    second: enemy_shadow_beast_23
+  - first:
+      213: -4394469372102040041
+    second: enemy_shadow_beast_24
+  - first:
+      213: -3157301639504843200
+    second: enemy_shadow_beast_25
+  - first:
+      213: 1244331507244570506
+    second: enemy_shadow_beast_26
+  - first:
+      213: -629673519186225178
+    second: enemy_shadow_beast_27
+  - first:
+      213: -300599025310412883
+    second: enemy_shadow_beast_28
+  - first:
+      213: -4391832187376284200
+    second: enemy_shadow_beast_29
+  - first:
+      213: 7938061665435929019
+    second: enemy_shadow_beast_30
+  - first:
+      213: -7175799494264803754
+    second: enemy_shadow_beast_31
+  - first:
+      213: 8889700529375470438
+    second: enemy_shadow_beast_32
+  - first:
+      213: -704924237576298533
+    second: enemy_shadow_beast_33
+  - first:
+      213: 4220494060872174577
+    second: enemy_shadow_beast_34
+  - first:
+      213: -3129726942380210777
+    second: enemy_shadow_beast_35
+  - first:
+      213: 349774469051475676
+    second: enemy_shadow_beast_36
+  - first:
+      213: -7415494894644538471
+    second: enemy_shadow_beast_37
+  - first:
+      213: -4637047862047792556
+    second: enemy_shadow_beast_38
+  - first:
+      213: -3362790067846178080
+    second: enemy_shadow_beast_39
+  - first:
+      213: 2715250787556900714
+    second: enemy_shadow_beast_40
+  - first:
+      213: -1566737345956001861
+    second: enemy_shadow_beast_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemy_shadow_beast_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 473
+        width: 116
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c3c117a439a20d10800000000000000
+      internalID: 2090419220659684291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 211
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf71e20e786a907c0800000000000000
+      internalID: -4104566482859583493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_2
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 681
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e12eb7adac6ec9e0800000000000000
+      internalID: -1599221324570549792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 484
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9549bfe3fde280510800000000000000
+      internalID: 1515512810979431513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_4
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 569
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ee8711a71f5c600800000000000000
+      internalID: 488061641221008948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_5
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 479
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddaa517fe8f0925c0800000000000000
+      internalID: -4239840467487446307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_6
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 672
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c47c5147756007f10800000000000000
+      internalID: 2265317585246865228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_7
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 496
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfcf9b80c5f259030800000000000000
+      internalID: 3500756357680332028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_8
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 484
+        width: 85
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 354d89fee89de29e0800000000000000
+      internalID: -1644137606015298477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_9
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 471
+        width: 27
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcd8e8670489be900800000000000000
+      internalID: 714832368502738383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_10
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 544
+        width: 149
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a24ba59ad687f80800000000000000
+      internalID: -8108610554941920707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_11
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 528
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31dfe2eeda2842480800000000000000
+      internalID: -8924864878004470509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_12
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 449
+        width: 88
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb73e9ebdcde2f330800000000000000
+      internalID: 3743315708220422078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_13
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 568
+        width: 51
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d34c3331e2b9ee0800000000000000
+      internalID: -1253357411284796077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_14
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 673
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a43afe149cc5860800000000000000
+      internalID: 7520106762832398940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_15
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 650
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d80f5798f69f7e2d0800000000000000
+      internalID: -3249354348681629555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_16
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 646
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01d79f3135f906d60800000000000000
+      internalID: 7881474527064587536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_17
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 560
+        width: 52
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccdfbf6cebaa90d40800000000000000
+      internalID: 5551155752069758412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_18
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 428
+        width: 103
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e204647752ed55e30800000000000000
+      internalID: 4491740455868186670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_19
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 8
+        width: 214
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ceb14d69f7dfbd90800000000000000
+      internalID: -7079702622923276607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_20
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 417
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 020e5a87345915e70800000000000000
+      internalID: 9102220438911967264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_21
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 312
+        width: 56
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f707d529a47a1770800000000000000
+      internalID: 8582300309741045746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_22
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 272
+        width: 50
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b4dd1185cba098d0800000000000000
+      internalID: -2841582500107660109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_23
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 242
+        width: 45
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa9393e8ac5cb8f90800000000000000
+      internalID: -6950244126156047953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_24
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 204
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71626839365b303c0800000000000000
+      internalID: -4394469372102040041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_25
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 224
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04e2e8013e20f24d0800000000000000
+      internalID: -3157301639504843200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_26
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 218
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a879320c9e0c44110800000000000000
+      internalID: 1244331507244570506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_27
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 220
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e75f6c3543f247f0800000000000000
+      internalID: -629673519186225178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_28
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 211
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daf4b8477ce04dbf0800000000000000
+      internalID: -300599025310412883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_29
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 208
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dd4f4ef4e31d03c0800000000000000
+      internalID: -4391832187376284200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_30
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 206
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb9447de609a92e60800000000000000
+      internalID: 7938061665435929019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_31
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 173
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e2be401607a6c90800000000000000
+      internalID: -7175799494264803754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_32
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 199
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 663e605288f8e5b70800000000000000
+      internalID: 8889700529375470438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_33
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 184
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf93b9042b9736f0800000000000000
+      internalID: -704924237576298533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_34
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 196
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fb8eeabcf4329a30800000000000000
+      internalID: 4220494060872174577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_35
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 173
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a5457b8de9f094d0800000000000000
+      internalID: -3129726942380210777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_36
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 135
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd66053c606aad400800000000000000
+      internalID: 349774469051475676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_37
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 119
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9935dfaaeaed61990800000000000000
+      internalID: -7415494894644538471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_38
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 95
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4522820a985e5afb0800000000000000
+      internalID: -4637047862047792556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_39
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 48
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ea11d70048f451d0800000000000000
+      internalID: -3362790067846178080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_40
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 15
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6fbd6c84328ea520800000000000000
+      internalID: 2715250787556900714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_shadow_beast_41
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 7
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb744fd4fa4d14ae0800000000000000
+      internalID: -1566737345956001861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      enemy_shadow_beast_0: 2090419220659684291
+      enemy_shadow_beast_1: -4104566482859583493
+      enemy_shadow_beast_10: -8108610554941920707
+      enemy_shadow_beast_11: -8924864878004470509
+      enemy_shadow_beast_12: 3743315708220422078
+      enemy_shadow_beast_13: -1253357411284796077
+      enemy_shadow_beast_14: 7520106762832398940
+      enemy_shadow_beast_15: -3249354348681629555
+      enemy_shadow_beast_16: 7881474527064587536
+      enemy_shadow_beast_17: 5551155752069758412
+      enemy_shadow_beast_18: 4491740455868186670
+      enemy_shadow_beast_19: -7079702622923276607
+      enemy_shadow_beast_2: -1599221324570549792
+      enemy_shadow_beast_20: 9102220438911967264
+      enemy_shadow_beast_21: 8582300309741045746
+      enemy_shadow_beast_22: -2841582500107660109
+      enemy_shadow_beast_23: -6950244126156047953
+      enemy_shadow_beast_24: -4394469372102040041
+      enemy_shadow_beast_25: -3157301639504843200
+      enemy_shadow_beast_26: 1244331507244570506
+      enemy_shadow_beast_27: -629673519186225178
+      enemy_shadow_beast_28: -300599025310412883
+      enemy_shadow_beast_29: -4391832187376284200
+      enemy_shadow_beast_3: 1515512810979431513
+      enemy_shadow_beast_30: 7938061665435929019
+      enemy_shadow_beast_31: -7175799494264803754
+      enemy_shadow_beast_32: 8889700529375470438
+      enemy_shadow_beast_33: -704924237576298533
+      enemy_shadow_beast_34: 4220494060872174577
+      enemy_shadow_beast_35: -3129726942380210777
+      enemy_shadow_beast_36: 349774469051475676
+      enemy_shadow_beast_37: -7415494894644538471
+      enemy_shadow_beast_38: -4637047862047792556
+      enemy_shadow_beast_39: -3362790067846178080
+      enemy_shadow_beast_4: 488061641221008948
+      enemy_shadow_beast_40: 2715250787556900714
+      enemy_shadow_beast_41: -1566737345956001861
+      enemy_shadow_beast_5: -4239840467487446307
+      enemy_shadow_beast_6: 2265317585246865228
+      enemy_shadow_beast_7: 3500756357680332028
+      enemy_shadow_beast_8: -1644137606015298477
+      enemy_shadow_beast_9: 714832368502738383
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
